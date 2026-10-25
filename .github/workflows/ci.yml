@@ -1,0 +1,14 @@
+name: CI
+
+on: push
+
+jobs:
+  check:
+    runs-on:ubuntu-lastest
+  steps:
+   - name: Say hello
+     run: echo "Hello from GitHup Actions"
+   - name: Get the code
+     uses: actions/checkout@v7
+   - name: list the files
+     run: ls
